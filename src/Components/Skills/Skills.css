@@ -1,0 +1,117 @@
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+    padding:80px 170px;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width:50%;
+  }
+  
+  .skill-item {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-item:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 2px solid #ffc201;
+  }
+  .skill-item img {
+    width: 60px;
+    height: 60px;
+    
+  }
+  
+  .skills-description {
+    max-width: 50%;
+    padding:0 30px;
+  }
+  
+  .skills-description h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%, rgba(251,251,254,1) 92%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .skills-description p {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 5px;
+  }
+
+  @media(max-width:1300px){
+    .skills-container {
+        flex-direction: column;
+        gap:50px;
+    }
+    .skills-grid {
+        width:100%;
+    }
+      
+    .skills-description {
+        max-width: 100%;
+        padding:0;
+    }
+  }
+
+@media(max-width:980px){
+    .skills-container{
+        padding:50px 70px;
+        align-items: start;
+    }
+
+    .skill-item {
+        width: 70px;
+        height: 70px;
+      }
+      .skill-item img {
+        width: 50px;
+        height: 50px;
+        
+      }
+}
+
+@media(max-width:768px){
+    .skills-description h2 {
+        font-size: 30px;
+      }
+      
+      .skills-description p {
+        font-size: 18px;
+      }
+}
+
+@media(max-width:550px){
+    .skills-container{
+        padding: 50px 30px;
+    } 
+
+    .skill-item {
+        width: 55px;
+        height: 55px;
+      }
+      
+      .skill-item img {
+        width: 35x;
+        height: 35px;
+        
+      }
+}

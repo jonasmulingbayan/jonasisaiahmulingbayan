@@ -1,0 +1,142 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.hero img{
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border:3px solid #ffc201;
+    outline: 1px solid #ffc201;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    color:#fff;
+    margin:0 15px;
+    padding: 15px 15px 15px 15px;
+    border:1px solid #ffc201;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.social-icons a:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.hero h1 span{
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%, rgb(224, 213, 46) 92%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .nameHeader{
+    width:100%;
+    font-size: 45px;
+}
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 21px;
+    line-height: 40px;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap:25px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
+    cursor: pointer;
+}
+
+.hero-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.hero-connect:hover{
+    border: 2px solid #fff;
+}
+
+.hero-resume:hover{
+    border-color: #ffc201;
+}
+
+
+@media(max-width:768px){
+    .hero img{
+        width:200px;
+        height: 200px;
+    }
+    .hero .nameHeader{
+        margin-top:30px;
+        font-size:30px;
+    }
+    .hero h1{
+        width:90%;
+        font-size:50px;
+    }
+    .hero p{
+        width:60%;
+        font-size:18px;
+        line-height: 32px;
+        margin:10px 0;
+    }
+
+    .hero-action{
+        gap:16px;
+        font-size:18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .hero-connect{
+        padding:20px 30px;
+        border-radius: 40px;
+    }
+
+    .hero-resume{
+        padding:20px 50px;
+        border-radius: 40px;
+    }
+}
+
+@media(max-width:600px){
+    .hero h1{
+        font-size: 35px;
+    }
+
+    .hero-connect{
+        padding:15px 20px;
+    }
+
+    .hero-resume{
+        padding:15px 30px;
+    }
+}

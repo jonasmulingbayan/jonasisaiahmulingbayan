@@ -1,0 +1,317 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    padding:80px 170px;
+}
+
+.projects-title{
+    position: relative;
+}
+.projects-title h1{
+    padding: 0px 30px;
+    font-size: 65px;
+    font-weight: 600;
+}
+.projects-title img{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: -1;
+    width: 150px;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:40px;
+    margin-bottom: 40px;
+}
+
+.projects-container img{
+    box-sizing: border-box;
+    width: 450px;
+    height: 250px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    border:1px solid #fff;
+}
+.projects-container img:hover{
+    transform: scale(1.10);
+    border:4px solid #ffc201;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.projects-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.filter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.filter-buttons{
+    border: 2px solid #ffc201;
+    display: flex;
+    gap:30px;
+    padding:10px 15px;
+    border-radius: 10px;
+}
+.filter-buttons button{
+    background: transparent;
+    color:#fff;
+    border:none;
+    outline: none;
+    padding:7px 11px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.filter-buttons button:hover{
+    background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
+    transition: 0.5s;
+
+}
+.projects-item h3{
+    text-align: center;
+    max-width: 90%;
+    flex-basis: 1;
+    flex-grow: 1;
+}
+.projects-item a{
+    text-decoration: none;
+    padding:10px 15px;
+    border-radius: 10px;
+    font-size:19px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+.demo{
+    border:2px solid #fff;
+    color:#fff;
+}
+.info{
+    color: #fff;
+    background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
+}
+.projects-item .demo:hover{
+    transform: scale(1.1);
+    border:2px solid #ffc201;
+    transition: 0.3s;
+}
+
+.projects-item .info:hover{
+    transform: scale(1.1);
+    border:2px solid #fff;
+    transition: 0.3s;
+}
+.project-button-item{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    width: 100%;
+}
+.projects-showmore{
+    display: flex;
+    gap:15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding:20px 30px;
+    font-size:20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.projects-showmore:hover{
+    gap:30px;
+    transition: 0.6s;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ffc201;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 3px;
+    color:#fff;
+  }
+
+  .pagination button:hover{
+    border: 1px solid #ffc201;
+    color:#fff;
+
+  }
+  
+  .pagination button.active {
+    background-color: #ffc201;
+    color:#fff;
+    cursor: pointer;
+  }
+
+
+  /* Modal */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 20% auto; /* 20% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Max width */
+    color:#313131;
+    border-radius: 10px;
+    
+  }
+  
+  .project-items{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .techstack{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+  }
+  .techstack span{
+    padding:5px 10px;
+    border-radius: 3px;
+  }
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+ 
+  .view-source-button {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width:175px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #000;
+    border:1px solid #ffc201;
+    color:#ffc201;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-source-button:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
+    transition: 0.3s;
+  }
+  
+@media(max-width:1600px){
+    
+    .projects-container{
+        grid-template-columns: 1fr 1fr;
+        gap:50px;
+    }
+
+   
+}
+
+@media(max-width:900px){
+    .projects{
+        gap:50px;
+        padding:50px 70px;
+    }
+
+    .projects-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .projects-title img{
+        width: 130px;
+        right: -20px;
+    }
+
+    .projects-container{
+        grid-template-columns: 1fr;
+        gap:50px;
+    }
+
+    .projects-container img{
+        width: 100%;
+        height: 100%;
+    }
+    .projects-item{
+        gap:20px;
+    }
+    .projects-item h3{
+        font-size:18px;
+    }
+    .projects-item a{
+        font-size:15px;
+    }
+    
+    .projects-showmore{
+        gap:10px;
+        padding:10px 15px;
+        font-size:18px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:700px){
+    .modal-content {
+        padding: 20px;
+        width: 85%; /* Could be more or less, depending on screen size */
+        max-width: 100%; /* Max width */
+        
+      }
+}
+@media(max-width:550px){
+    .projects{
+        padding: 50px 30px;
+    } 
+
+   
+}

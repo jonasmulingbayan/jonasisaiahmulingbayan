@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  height: 100vh;
+  background: #161513;
+  color:#fff;
+  font-family: 'Google Sans';
+}
+
+body::-webkit-scrollbar{
+	width: 7px;
+}
+body::-webkit-scrollbar-track{
+	background: #fff;
+}
+body::-webkit-scrollbar-thumb{
+	background:#ffc201;
+	border-radius: 25px;
+}
