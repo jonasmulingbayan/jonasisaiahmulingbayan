@@ -70,7 +70,7 @@ const mywork_data = [
         w_name:"Jonas Isaiah P. Mulingbayan | Personal Website",
         w_img:project5_img,
         w_gh_link: "#",
-        w_demo_link: "http://jonasmulingbayan.infinityfreeapp.com/",
+        w_demo_link: "https://jonasmulingbayan.github.io/jonasisaiahmulingbayan/",
         w_category: "React",
         w_proj: "Personal Website",
         w_description: "This website is created to showcase my skills in web designing. I design and developed the UI of this project using React Js, and Vite Js",
