@@ -105,13 +105,9 @@
     } 
 
     .skill-item {
-        width: 55px;
-        height: 55px;
-      }
+        width: 60px;
+        height: 60px;
+        padding:10px;
+    }
       
-      .skill-item img {
-        width: 35x;
-        height: 35px;
-        
-      }
 }
