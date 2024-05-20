@@ -16,16 +16,18 @@
 .social-icons{
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
 }
 .social-icons a{
     color:#fff;
     margin:0 15px;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     border:1px solid #ffc201;
     border-radius: 50%;
     align-items: center;
     display: flex;
     justify-content: center;
+    font-size:25px;
 }
 .social-icons a:hover{
     transform: scale(1.1);
@@ -131,6 +133,9 @@
     .hero h1{
         font-size: 35px;
     }
+    .hero p{
+        width:85%;
+    }
 
     .hero-connect{
         padding:15px 20px;
@@ -138,5 +143,19 @@
 
     .hero-resume{
         padding:15px 30px;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .social-icons a{
+        color:#fff;
+        margin:0 10px;
+        padding: 10px;
+        border:1px solid #ffc201;
+        border-radius: 50%;
+        font-size:20px;
     }
 }

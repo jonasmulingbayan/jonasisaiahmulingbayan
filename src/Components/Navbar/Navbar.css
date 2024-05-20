@@ -114,8 +114,6 @@
     
 }
 
-
-
 @media(max-width:1024px){
     .navbar{
         padding:20px 50px;
@@ -141,7 +139,7 @@
         align-items: start;
         top:0;
         gap:30px;
-        background-color: #1f0016;
+        background-color: #202020;
         width:350px;
         height: 100%;
         z-index:5;

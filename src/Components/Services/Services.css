@@ -93,6 +93,7 @@
 }
 
 @media(max-width:998px){
+    
     .services-container{
         display: flex;
         flex-wrap: wrap;
@@ -117,7 +118,7 @@
     .services{
         align-items: start;
         gap:60px;
-        padding:20px 70px;
+        padding:20px 55px;
     }
 
     .services-title h1{

@@ -59,16 +59,16 @@ const Hero = () => {
       <img src ={profile_img} alt=""/>
       <div className='social-icons'>
         <a href="https://github.com/jonasmulingbayan" target="_blank" rel="noopener noreferrer">
-          <FaGithub size={30} />
+          <FaGithub/>
         </a>
         <a href="https://www.facebook.com/jonasisaiah.mulingbayan" target="_blank" rel="noopener noreferrer">
-          <FaFacebook size={30} />
+          <FaFacebook/>
         </a>
         <a href="https://www.instagram.com/jonasmulingbayan/" target="_blank" rel="noopener noreferrer">
-          <FaInstagram size={30} />
+          <FaInstagram/>
         </a>
         <a href="https://www.linkedin.com/in/jonas-isaiah-mulingbayan-0b0369264/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin size={30} />
+          <FaLinkedin/>
         </a>
       </div>
       <p className='nameHeader'> Hello, Im</p>

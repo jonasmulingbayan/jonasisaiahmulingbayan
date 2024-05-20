@@ -195,12 +195,15 @@
     }
 }
 
-@media(max-width:768px){
+@media(max-width:998px){
     .contact{
         align-items: start;
         gap:50px;
-        padding:50px 70px;
+        padding:50px 55px;
     }
+}
+@media(max-width:768px){
+    
     
     .contact-title h1{
         padding: 0;
