@@ -153,9 +153,14 @@
         flex-direction: row;
         gap:20px;
     }
+    .navbar-logo{
+        margin-left:-25px;
+    }
 }
 
 @media(max-width:500px){
+
+    
     .navbar h3{
         font-size:18px;
         margin-left:-10px;
