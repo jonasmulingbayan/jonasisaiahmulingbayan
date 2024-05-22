@@ -73,7 +73,6 @@ const Projects = () => {
     };
   }, []);
 
-  const shouldShowPagination = filteredProjects.length >= projectsPerPage && filteredProjects.length > 0;
 
   return (
     <div id="projects" className='projects sections'>
@@ -131,15 +130,21 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      {shouldShowPagination && (<div className="pagination">
-        <button onClick={goToPrevPage} disabled={currentPage === 1}>Previous</button>
+      <div className="pagination">
+        <button onClick={goToPrevPage} disabled={currentPage === 1}
+        style={{
+          cursor: currentPage === 1 ? 'not-allowed' : 'pointer'
+        }}>Previous</button>
         {Array.from({ length: totalPages }, (_, i) => (
           <button key={i + 1} onClick={() => paginate(i + 1)} className={currentPage === i + 1 ? 'active' : ''}>
             {i + 1}
           </button>
         ))}
-        <button onClick={goToNextPage} disabled={currentPage === totalPages}>Next</button>
-      </div>)}
+        <button onClick={goToNextPage} disabled={currentPage === totalPages}
+        style={{
+          cursor: currentPage === totalPages ? 'not-allowed' : 'pointer'
+        }}>Next</button>
+      </div>
       {/* Modal */}
       {selectedProject && (
   <div className="modal">
