@@ -14,6 +14,7 @@ import project13_img from '../assets/projects/portfolio-13.png'
 import project14_img from '../assets/projects/portfolio-14.png'
 import project15_img from '../assets/projects/portfolio-15.png'
 import project16_img from '../assets/projects/portfolio-16.png'
+import project17_img from '../assets/projects/portfolio-17.png'
 
 const mywork_data = [
     {
@@ -200,7 +201,7 @@ const mywork_data = [
         w_tech_stack: ["WordPress", "Elementor", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
     },
     {
-        w_no:15,
+        w_no:16,
         w_name:"The Best Template",
         w_img:project16_img,
         w_gh_link: "#",
@@ -209,6 +210,17 @@ const mywork_data = [
         w_proj: "Freelance Project",
         w_description: "This website is created using wordpress with elementor as page builder. This is my sixth wordpress website created as a Wordpress Developer.",
         w_tech_stack: ["WordPress", "Blocksy", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
+    },
+    {
+        w_no:17,
+        w_name:"Image Search Engine",
+        w_img:project17_img,
+        w_gh_link: "https://github.com/jonasmulingbayan/image-search-engine.git",
+        w_demo_link: "https://jonasmulingbayan.github.io/image-search-engine/",
+        w_category: "HTML",
+        w_proj: "JavaScript | API Practice",
+        w_description: "This website is created using HTML, CSS and JavaScript. This website is for practice purpose only, to familiarize how to fetch api using JavaScript.",
+        w_tech_stack: ["HTML", "CSS", "JavaScript"]
     },
 ]
  
