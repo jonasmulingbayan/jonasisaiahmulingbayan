@@ -29,7 +29,6 @@ const About = () => {
                     <div className="information">
                         <ul>
                             <li><strong>Birthday:</strong> <span>18 November 1995</span></li>
-                            <li><strong>Website:</strong> <span>https://jonasmulingbayan.netlify.app/</span></li>
                             <li><strong>City:</strong> <span>Bacoor City, Cavite</span></li>
                             <li><strong>Email:</strong> <span>jonasmulingbayan@gmail.com</span></li>
                         </ul>
