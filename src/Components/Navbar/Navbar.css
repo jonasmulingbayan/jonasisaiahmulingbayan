@@ -99,9 +99,6 @@
     }
 }
 @media(max-width:1400px){
-    .navbar{
-        padding:20px 50px;
-    }
     .nav-menu{
         gap:40px;
         font-size: 18px;
@@ -115,9 +112,6 @@
 }
 
 @media(max-width:1024px){
-    .navbar{
-        padding:20px 50px;
-    }
     .nav-connect{
         display: none;
     }
@@ -159,8 +153,9 @@
 }
 
 @media(max-width:500px){
-
-    
+    .navbar{
+        padding:10px 50px;
+    }
     .navbar h3{
         font-size:18px;
         margin-left:-10px;
@@ -168,5 +163,12 @@
     .navbar-logo{
         height: 50px;
         width: 100px;
+    }
+
+    .nav-mob-open{
+        height: 25px;
+    }
+    .nav-mob-close{
+        height: 25px;
     }
 }
