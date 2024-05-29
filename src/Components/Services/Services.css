@@ -145,6 +145,14 @@
 
 @media(max-width:550px){
     .services{
-        padding: 50px 30px;
+        padding: 50px 30px 5px 30px;
     } 
+
+    .services-title h1{
+        font-size: 45px;
+    }
+    .services-title img{
+        right: -10px;
+        width: 115px;
+    }
 }

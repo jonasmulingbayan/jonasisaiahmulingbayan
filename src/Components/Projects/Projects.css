@@ -319,6 +319,14 @@
     .filter-buttons button{
         padding:3px 8px;
     }
+
+    .projects-title h1{
+        font-size: 45px;
+    }
+    .projects-title img{
+        right: -10px;
+        width: 115px;
+    }
 }
 
 @media(max-width:420px){

@@ -265,7 +265,8 @@
 
 @media(max-width:550px){
     .contact{
-        padding: 50px 30px;
+        padding: 10px 30px;
+        gap:25px;
     } 
 
     .contact-right input{
@@ -275,5 +276,17 @@
     .contact-right textarea{
         max-width:90%;
         min-width: 90%;
+    }
+
+    .contact-title h1{
+        font-size: 45px;
+    }
+    .contact-title img{
+        right: -10px;
+        width: 115px;
+    }
+
+    .contact-left h1{
+        font-size:30px;
     }
 }
