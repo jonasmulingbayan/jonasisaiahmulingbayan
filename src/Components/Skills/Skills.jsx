@@ -14,7 +14,7 @@ const Skills = () => {
 </p><p>
 Knowledgeable in modern development tools like Vite for fast-paced development workflows. Competent in version control using Git for effective collaboration and project management.
 </p><p>
-Additionally, adept in using Figma for designing intuitive user interfaces and collaborating with design teams. Currently exploring ReactJS for building dynamic and interactive web applications.
+Currently exploring ReactJS for building dynamic and interactive web applications.
         </p>
       </div>
       <div className="skills-grid">
