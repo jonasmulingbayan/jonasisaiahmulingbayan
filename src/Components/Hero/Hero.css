@@ -130,6 +130,11 @@
 }
 
 @media(max-width:600px){
+    .hero img{
+        margin-top:35px;
+        height: 140px;
+        width: 140px;
+    }
     .hero h1{
         font-size: 35px;
     }
@@ -157,5 +162,22 @@
         border:1px solid #ffc201;
         border-radius: 50%;
         font-size:20px;
+    }
+}
+
+@media(max-width:500px){
+    .hero-action{
+        gap:16px;
+        font-size:14px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .hero-connect{
+        padding:12px 18px;
+    }
+
+    .hero-resume{
+        padding:12px 20px;
     }
 }
