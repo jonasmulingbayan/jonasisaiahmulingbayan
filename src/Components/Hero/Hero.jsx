@@ -47,7 +47,7 @@ const Hero = () => {
 
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/jonas.pdf'; // This should be the relative path to your PDF in the public folder
+    link.href = './jonas.pdf'; // This should be the relative path to your PDF in the public folder
     link.download = 'jonas.pdf'; // The name for the downloaded file
     document.body.appendChild(link);
     link.click();
