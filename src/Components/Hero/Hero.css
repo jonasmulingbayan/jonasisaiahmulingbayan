@@ -10,8 +10,8 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border:3px solid #ffc201;
-    outline: 1px solid #ffc201;
+    border:3px solid var(--yellow);
+    outline: 1px solid var(--yellow);
 }
 .social-icons{
     display: flex;
@@ -19,10 +19,10 @@
     margin-bottom: 15px;
 }
 .social-icons a{
-    color:#fff;
+    color:var(--white);
     margin:0 15px;
     padding: 15px;
-    border:1px solid #ffc201;
+    border:1px solid var(--yellow);
     border-radius: 50%;
     align-items: center;
     display: flex;
@@ -78,16 +78,16 @@
 .hero-resume{
     padding: 25px 75px;
     border-radius: 50px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     cursor: pointer;
 }
 
 .hero-connect:hover{
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
 }
 
 .hero-resume:hover{
-    border-color: #ffc201;
+    border-color: var(--white);
 }
 
 
