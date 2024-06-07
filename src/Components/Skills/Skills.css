@@ -1,7 +1,7 @@
 .skills-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 100px;
   padding: 80px 170px;
 }
