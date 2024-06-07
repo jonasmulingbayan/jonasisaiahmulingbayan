@@ -67,9 +67,13 @@
     position: relative;
     display: inline-block;
 }
+.anchor-link:hover p{
+    color:#ffc201 !important;
+}
 .anchor-link p.active{
     color: #ffc201;
 }
+
 .nav-menu .anchor-link::after {
     content: '';
     position: absolute;
@@ -80,9 +84,7 @@
     background-color: #ffc201;
     transition: width 0.4s ease, left 0.4s ease;
 }
-.nav-menu .anchor-link:hover{
-    color:#ffc201;
-}
+
 .nav-menu .anchor-link:hover::after {
     width: 100%;
     left: 0;
