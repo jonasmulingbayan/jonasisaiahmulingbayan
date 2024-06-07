@@ -20,58 +20,72 @@ const skills_data = [
     {
         s_no:1,
         s_img:tools1,
+        s_name: "HTML"
     },
     {
         s_no:2,
         s_img:tools2,
+        s_name: "CSS"
     },
     {
         s_no:3,
         s_img:tools3,
+        s_name: "JavaScript"
     },
     {
         s_no:4,
         s_img:tools4,
+        s_name: "Bootstrap"
     },
     {
         s_no:5,
         s_img:tools5,
+        s_name: "Tailwind"
     },
     {
         s_no:6,
         s_img:tools6,
+        s_name: "PHP"
     },
     {
         s_no:7,
         s_img:tools7,
+        s_name: "Laravel"
     },
     {
         s_no:8,
         s_img:tools8,
+        s_name: "WordPress"
     },
     {
         s_no:9,
         s_img:tools9,
+        s_name: "React JS"
     },
     {
         s_no:10,
         s_img:tools10,
+        s_name: "MySQL"
     },
     {
         s_no:11,
         s_img:tools11,
+        s_name: "Vite"
     },
     {
         s_no:12,
         s_img:tools12,
+        s_name: "Figma"
     },
     {
         s_no:13,
         s_img:tools13,
+        s_name: "Git"
     },
     {
         s_no:14,
         s_img:tools14,
+        s_name: "Github"
     },
 ]
  

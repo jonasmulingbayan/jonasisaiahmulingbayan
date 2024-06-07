@@ -21,6 +21,7 @@ Currently exploring ReactJS for building dynamic and interactive web application
         {skills_data.map(skill => (
           <div key={skill.s_no} className="skill-item">
             <img src={skill.s_img} alt={`skill-${skill.s_no}`} />
+            <span>{skill.s_name}</span>
           </div>
         ))}
       </div>
