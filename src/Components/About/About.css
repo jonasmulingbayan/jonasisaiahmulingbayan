@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap:80px;
-    padding: 80px 170px;
+    padding: 80px 170px 20px 170px;
 }
 
 .about-title{
