@@ -97,7 +97,7 @@
     transition: 0.5s;
 }
 
-.about-achievement h1{
+.about-achievement .count{
     font-size:50px;
     font-weight: 700;
     background: rgb(9,9,121);
@@ -213,7 +213,7 @@
     .about-achievement{
         gap: 10px;
     }
-    .about-achievement h1{
+    .about-achievement .count{
         font-size:34px;
         font-weight: 700;
     }

@@ -5,6 +5,7 @@ import './Hero.css'
 import profile_img from '../../assets/profile-img.png'
 import jonas from '../../assets/jonas-pajah.jpg'
 import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { LuDownload } from "react-icons/lu";
 
 const Hero = () => {
 
@@ -71,13 +72,13 @@ const Hero = () => {
           <FaLinkedin/>
         </a>
       </div>
-      <p className='nameHeader'> Hello, Im</p>
+      <p className='nameHeader'> Hello, I'm</p>
       <h1><span>Jonas Isaiah P. Mulingbayan</span></h1>
       <h2>{displayedText}<span className="cursor">|</span></h2>
       <p>I am a Frontend developer from Bacoor City, Cavite, Philippines, with one year of experience. Ready to create captivating digital experiences!</p>
       <div className='hero-action'>
             <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href = '#contact'>Connect with me</AnchorLink></div>
-            <div className="hero-resume" onClick={downloadResume}>Download CV</div>
+            <div className="hero-resume" onClick={downloadResume}>Download CV <LuDownload className='download-icon'/></div>
       </div>
     </div>
   )
