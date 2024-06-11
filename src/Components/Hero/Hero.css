@@ -73,6 +73,7 @@
     border-radius: 50px;
     background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
     cursor: pointer;
+    border: 2px solid var(--yellow);
 }
 
 .hero-resume{
