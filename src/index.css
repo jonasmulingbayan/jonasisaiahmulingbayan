@@ -27,8 +27,12 @@ body::-webkit-scrollbar-track{
 	background: var(--white);
 }
 body::-webkit-scrollbar-thumb{
-	background: var(--yellow);
+  background: var(--yellow);
 	border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background: var(--medium-black);
 }
 
 ::selection{
