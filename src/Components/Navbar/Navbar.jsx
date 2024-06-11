@@ -99,6 +99,19 @@ const Navbar = () => {
         </li>
 
         <li>
+          <AnchorLink className='anchor-link' offset={50} href='#experience'>
+            <p 
+              onClick={() => handleMenuClick("experience")}
+              className={menu === "experience" ? "active" : ""}
+              style={menu === "experience"  ? { color: "#ffc201" } : { color: "#fff" }
+              }
+            >
+              EXPERIENCES
+            </p>
+          </AnchorLink>
+        </li>
+
+        <li>
           <AnchorLink className='anchor-link' offset={50} href='#services'>
             <p
               onClick={() => handleMenuClick("services")}
