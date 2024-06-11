@@ -48,10 +48,19 @@
 
   .experience-card:hover{
     border:2px solid var(--yellow);
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: 0.4s;
 }
-  
+.logo-header{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 15px;
+}
+.logo-header img{
+    height: 80px;
+    border-radius: 50%;
+}
   .experience-company {
     font-size: 27px;
     margin-bottom: 5px;
@@ -124,11 +133,11 @@
     }
 
     .experience-company {
-        font-size: 25px;
+        font-size: 22px;
       }
       
       .experience-position {
-        font-size: 20px;
+        font-size: 17.5px;
       }
       
       .experience-details {
@@ -140,6 +149,10 @@
         font-size:18px;
         margin-top:5px;
       }
+
+      .logo-header img{
+        height: 65px;
+    }
 }
 
 @media(max-width:550px){
