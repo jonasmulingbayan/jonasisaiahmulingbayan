@@ -99,8 +99,16 @@ const About = () => {
             <div className="about-achievements">
                 {counts.map((count, index) => (
                     <div className="about-achievement" key={index}>
-                        <div className="count">
-                            {animated && <CountUp start={0} end={Math.round(count)} duration={2} />}
+                         <div className='count'>
+                            {counts[index] > 9 ? (
+                                <>
+                                    <CountUp start={0} end={Math.round(count)} duration={2} />
+                                    <span>+</span>
+                                </>
+                            ) : (
+                                <CountUp start={0} end={Math.round(count)} duration={2} />
+                                
+                            )}
                         </div>
                         <p>{stats[index].text}</p>
                     </div>
