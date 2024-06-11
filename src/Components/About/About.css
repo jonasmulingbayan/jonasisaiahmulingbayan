@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     gap:20px;
-    font-size:22px;
+    font-size:20px;
     font-weight: 500;
 }
 
@@ -69,7 +69,7 @@
 
 .about-skill p{
     min-width: 150px;
-    font-size:22px;
+    font-size:20px;
     font-weight: 500;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .about-achievement p{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }
 
@@ -138,7 +138,7 @@
     -webkit-text-fill-color: transparent;
 }
 .about-paragraph p{
-    font-size:22px;
+    font-size:20px;
 }
 .information{
     display: flex;
@@ -152,7 +152,7 @@
 }
 .about-informations ul li{
     list-style: none;
-    font-size:22px;
+    font-size:20px;
     margin-bottom: 5px;
 }
 @media(max-width:1024px){
