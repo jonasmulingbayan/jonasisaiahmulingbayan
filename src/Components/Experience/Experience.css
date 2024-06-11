@@ -90,18 +90,16 @@
     .experience-card {
         width: 100%;
         justify-content: center;
-      }
+    }
+   
   }
 
   @media(max-width:1024px){
-    .about{
+    .experience{
         gap:50px;
         padding: 80px 50px 20px 50px;
     }
-    .about-left{
-        text-align: center;
-    }
-    .about-sections{
+    .experience-sections{
         flex-direction: column;
         gap:80px;
     }

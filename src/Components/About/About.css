@@ -172,7 +172,7 @@
     .about{
         align-items: start;
         gap:60px;
-        padding: 50px 55px 20px 55px;
+        padding: 50px 30px 20px 30px;
     } 
     .about-title h1{
         padding: 0;
@@ -244,7 +244,7 @@
 
 @media(max-width:550px){
     .about{
-        padding: 50px 30px 5px 30px;
+        padding: 50px 30px 5px 30px !important;
     } 
     .about-title h1{
         font-size: 45px;
