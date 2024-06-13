@@ -120,7 +120,7 @@ const Projects = () => {
             <img src={work.w_img} alt=""/>
             <h3>{work.w_name}</h3>
             <div className='project-button-item'>
-              <a className='info' onClick={() => openModal(work)} aria-label="View i of my projects" >
+              <a className='info' onClick={() => openModal(work)} aria-label="View informations about my projects" >
                 View Info <FaInfoCircle /> 
               </a>
               <a className='demo' href={work.w_demo_link} target="_blank" rel="noopener noreferrer" aria-label="Visit the repository of my projects">
