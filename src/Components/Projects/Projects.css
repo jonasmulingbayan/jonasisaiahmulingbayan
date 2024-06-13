@@ -86,6 +86,7 @@
     flex-basis: 1;
     flex-grow: 1;
 }
+.projects-item button,
 .projects-item a{
     text-decoration: none;
     padding:10px 15px;
