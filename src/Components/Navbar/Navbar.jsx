@@ -63,7 +63,7 @@ const Navbar = () => {
     <div className={`navbar ${isSticky ? 'sticky' : ''}`} >
       {/*<img src={logo} alt="" />*/}
       <img src={menu_open} alt="" className='nav-mob-open' onClick={openMenu} />
-      <AnchorLink className='anchor-link' offset={50} href='#home'>
+      <AnchorLink className='anchor-link' offset={50} href='#home' aria-label="Back to Home">
       <img className = "navbar-logo" src={logo} alt="" />
       {/*<h3>
         <span id="symbols1">&#x003C;</span> JONAS MULINGBAYAN <span id="symbols2">/&#62;</span>
