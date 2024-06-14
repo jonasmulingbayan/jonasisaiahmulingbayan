@@ -59,16 +59,16 @@ const Hero = () => {
     <div id = "home" className='hero'>
       <img src ={profile_img} alt=""/>
       <div className='social-icons'>
-        <a href="https://github.com/jonasmulingbayan" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/jonasmulingbayan" target="_blank" rel="noopener noreferrer" aria-label="Visit my github account">
           <FaGithub/>
         </a>
-        <a href="https://www.facebook.com/jonasisaiah.mulingbayan" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/jonasisaiah.mulingbayan" target="_blank" rel="noopener noreferrer" aria-label="Visit my facebook account">
           <FaFacebook/>
         </a>
-        <a href="https://www.instagram.com/jonasmulingbayan/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/jonasmulingbayan/" target="_blank" rel="noopener noreferrer" aria-label="Visit my instagram account">
           <FaInstagram/>
         </a>
-        <a href="https://www.linkedin.com/in/jonas-isaiah-mulingbayan-0b0369264/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/jonas-isaiah-mulingbayan-0b0369264/" target="_blank" rel="noopener noreferrer" aria-label="Visit my linkedin account">
           <FaLinkedin/>
         </a>
       </div>
