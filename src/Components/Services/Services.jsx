@@ -8,7 +8,7 @@ const Services = () => {
     <div id = "services" className='services sections'>
         <div className="services-title">
             <h1>My Services</h1>
-            <img src = {theme_patern} alt = ""/>
+            <img src = {theme_patern} alt = "pattern" loading="lazy"/>
         </div>
         <div className="services-container">
             {Services_Data.map((service,index) =>{

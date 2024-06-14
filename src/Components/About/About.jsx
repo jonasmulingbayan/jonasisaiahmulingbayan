@@ -62,11 +62,11 @@ const About = () => {
         <div id="about" className='about sections'>
             <div className="about-title">
                 <h1>Who am I?</h1>
-                <img src={theme_patern} alt="" />
+                <img src={theme_patern} alt="pattern" loading="lazy"/>
             </div>
             <div className="about-sections">
                 <div className="about-left">
-                    <img src={jonas} alt="" />
+                    <img src={jonas} alt="Jonas Isaiah P. Mulingbayan" loading="lazy"/>
                 </div>
                 <div className="about-right">
                     <div className="about-paragraph">

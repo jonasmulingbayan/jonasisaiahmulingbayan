@@ -78,7 +78,7 @@ const Projects = () => {
     <div id="projects" className='projects sections'>
       <div className="projects-title">
         <h1>My Projects</h1>
-        <img src={themePattern} alt="" />
+        <img src={themePattern} alt="pattern" loading="lazy"/>
       </div>
       <div className="filter-buttons">
         <button
@@ -117,7 +117,7 @@ const Projects = () => {
       <div className="projects-container">
         {filteredProjects.map((work, index) => (
           <div className='projects-item' key={index}>
-            <img src={work.w_img} alt=""/>
+            <img src={work.w_img} alt="Projects" loading="lazy"/>
             <h3>{work.w_name}</h3>
             <div className='project-button-item'>
               <button type='button' className='info' onClick={() => openModal(work)} aria-label="View informations about my projects" >

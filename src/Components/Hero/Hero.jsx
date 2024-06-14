@@ -57,7 +57,7 @@ const Hero = () => {
     
   return (
     <div id = "home" className='hero'>
-      <img src ={profile_img} alt=""/>
+      <img src ={profile_img} alt="Jonas Isaiah P. Mulingbayan" loading="lazy"/>
       <div className='social-icons'>
         <a href="https://github.com/jonasmulingbayan" target="_blank" rel="noopener noreferrer" aria-label="Visit my github account">
           <FaGithub/>

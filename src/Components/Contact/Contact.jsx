@@ -52,7 +52,7 @@ const Contact = () => {
     <div id="contact" className='contact sections'>
       <div className="contact-title">
         <h1>Get in touch</h1>
-        <img src={theme_patern} alt="" />
+        <img src={theme_patern} alt="pattern" loading="lazy"/>
       </div>
       <div className="contact-section">
         <div className="contact-left">
@@ -60,10 +60,10 @@ const Contact = () => {
           <p>I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src={mail_icon} alt="" /> <p>jonasmulingbayan@gmail.com</p>
+              <img src={mail_icon} alt="mail" loading="lazy"/> <p>jonasmulingbayan@gmail.com</p>
             </div>
             <div className="contact-detail">
-              <img src={location_icon} alt="" /> <p>Bacoor City, Cavite, Philippines</p>
+              <img src={location_icon} alt="number" loading="lazy"/> <p>Bacoor City, Cavite, Philippines</p>
             </div>
             <iframe
               id="address-frame"
