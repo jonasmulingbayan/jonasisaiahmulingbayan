@@ -147,12 +147,14 @@
 .info{
     color: var(--white);
     background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
-    border: 1px solid var(--light-accent);
+    border: 1px solid var(--yellow);
 }
 
 .projects.light .info{
     color: var(--white);
     background: linear-gradient(90deg, var(--light-accent) 9%, var(--light-accent) 56%,var(--light-accent) 92%);
+    border: 1px solid var(--light-accent);
+
 }
 
 .projects-item .demo:hover{
