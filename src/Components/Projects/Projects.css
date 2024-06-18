@@ -39,6 +39,13 @@
     border-radius: 10px;
     border:1px solid var(--white);
 }
+
+.projects.light .projects-container img{
+    border:1px solid var(--black);
+}
+.projects.light .projects-container img:hover{
+    border:1px solid var(--light-accent);
+}
 .projects-container img:hover{
     transform: scale(1.10);
     border:4px solid var(--yellow);
@@ -65,6 +72,11 @@
     padding:10px 15px;
     border-radius: 10px;
 }
+.filter-button.active {
+    background-color: var(--yellow);
+    color:var(--white);
+}
+
 .filter-buttons button{
     background: transparent;
     color:var(--white);
@@ -75,11 +87,31 @@
     font-weight: 600;
     cursor: pointer;
 }
+
 .filter-buttons button:hover{
     background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
     transition: 0.5s;
 
 }
+
+.projects.light .filter-buttons{
+    border: 2px solid var(--light-accent);
+}
+.projects.light .filter-button.active {
+    background-color: var(--light-accent);
+    color:var(--white);
+}
+
+.projects.light .filter-buttons button{
+    color: var(--light-accent);
+}
+
+.projects.light .filter-buttons button:hover{
+    background: linear-gradient(90deg, var(--light-accent) 9%, var(--light-accent) 56%,var(--light-accent) 92%);
+    transition: 0.5s;
+    color:var(--white);
+}
+
 .projects-item h3{
     text-align: center;
     max-width: 90%;
@@ -102,10 +134,27 @@
     border:2px solid var(--white);
     color:var(--white);
 }
+
+.projects.light .demo{
+    border:2px solid var(--light-accent);
+    color:var(--light-accent);
+}
+
+.projects.light .demo:hover{
+    border:2px solid var(--light-accent);
+    color:var(--light-accent);
+}
 .info{
     color: var(--white);
     background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
+    border: 1px solid var(--light-accent);
 }
+
+.projects.light .info{
+    color: var(--white);
+    background: linear-gradient(90deg, var(--light-accent) 9%, var(--light-accent) 56%,var(--light-accent) 92%);
+}
+
 .projects-item .demo:hover{
     transform: scale(1.1);
     border: 2px solid var(--yellow);
@@ -135,6 +184,10 @@
     transition: 0.6s;
     cursor: pointer;
 }
+
+.projects.light .projects-showmore{
+    border: 2px solid var(--light-accent);
+}
 .projects-showmore:hover{
     gap:30px;
     transition: 0.6s;
@@ -145,7 +198,7 @@
     justify-content: center;
   }
   
-  .pagination button {
+.pagination button {
     margin: 0 5px;
     padding: 5px 10px;
     border: 1px solid var(--yellow);
@@ -153,19 +206,31 @@
     cursor: pointer;
     border-radius: 3px;
     color:var(--white);
-  }
-
-  .pagination button:hover{
-    border: 1px solid var(--yellow);
+}
+.projects.light .pagination button{
+    border: 1px solid var(--light-accent);
+    color: var(--light-accent);
+}
+.pagination button:hover{
+    background-color: var(--yellow);
     color:var(--white);
+}
 
-  }
-  
-  .pagination button.active {
+.projects.light .pagination button:hover{
+    background-color: var(--light-accent);
+    color:var(--white);
+}
+
+.projects.light  .pagination button.active {
+    background-color: var(--light-accent);
+    color:var(--white);
+    cursor: pointer;
+}
+.pagination button.active {
     background-color: var(--yellow);
     color:var(--white);
     cursor: pointer;
-  }
+}
 
 
   /* Modal */

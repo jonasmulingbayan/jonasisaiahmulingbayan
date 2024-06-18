@@ -4,7 +4,7 @@ import themePattern from '../../assets/theme_pattern.svg';
 import ProjectData from '../../assets/mywork_data';
 import { FaGithub,FaLink, FaInfoCircle } from "react-icons/fa";
 
-const Projects = () => {
+const Projects = ({theme}) => {
   const [selectedCategory, setSelectedCategory] = useState(() => {
     // Retrieve selected category from localStorage if available, or default to 'All'
     return localStorage.getItem('selectedCategory') || 'All';
@@ -75,7 +75,7 @@ const Projects = () => {
 
 
   return (
-    <div id="projects" className='projects sections'>
+    <div id="projects" className={`projects sections ${theme}`}>
       <div className="projects-title">
         <h1>My Projects</h1>
         <img src={themePattern} alt="pattern" loading="lazy"/>
@@ -83,37 +83,36 @@ const Projects = () => {
       <div className="filter-buttons">
         <button
           onClick={() => handleFilter('All')}
-          style={{ backgroundColor: selectedCategory === 'All' ? '#ffc201' : 'initial' }}
+          className={`filter-button ${selectedCategory === 'All' ? 'active' : ''}`}
         >
           All
         </button>
         <button
           onClick={() => handleFilter('Wordpress')}
-          style={{ backgroundColor: selectedCategory === 'Wordpress' ? '#ffc201' : 'initial' }}
+          className={`filter-button ${selectedCategory === 'Wordpress' ? 'active' : ''}`}
         >
           WordPress
         </button>
         <button
           onClick={() => handleFilter('PHP')}
-          style={{ backgroundColor: selectedCategory === 'PHP' ? '#ffc201' : 'initial' }}
+          className={`filter-button ${selectedCategory === 'PHP' ? 'active' : ''}`}
         >
           PHP
         </button>
-
         <button
           onClick={() => handleFilter('React')}
-          style={{ backgroundColor: selectedCategory === 'React' ? '#ffc201' : 'initial' }}
+          className={`filter-button ${selectedCategory === 'React' ? 'active' : ''}`}
         >
           React
         </button>
-
         <button
           onClick={() => handleFilter('HTML')}
-          style={{ backgroundColor: selectedCategory === 'HTML' ? '#ffc201' : 'initial' }}
+          className={`filter-button ${selectedCategory === 'HTML' ? 'active' : ''}`}
         >
           HTML
         </button>
       </div>
+
       <div className="projects-container">
         {filteredProjects.map((work, index) => (
           <div className='projects-item' key={index}>

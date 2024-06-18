@@ -2,9 +2,9 @@ import React from 'react';
 import skills_data from '../../assets/myskills_data'; // Update the path as necessary
 import './Skills.css'; // Import the CSS file for styling
 
-const Skills = () => {
+const Skills = ({ theme }) => {
   return (
-    <div className="skills-container">
+    <div className={`skills-container ${theme}`}>
       <div className="skills-description">
         <h2>Featured <span className="highlight">Skills</span></h2>
         <p>Proficient in front-end web development technologies such as HTML5, CSS, and JavaScript, with a strong grasp of responsive design principles. Skilled in utilizing both Bootstrap and Tailwind CSS frameworks for building stylish and user-friendly interfaces. Familiarity with WordPress and Elementor for rapid website development and customization.</p>

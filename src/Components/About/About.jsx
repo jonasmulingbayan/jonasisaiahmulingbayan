@@ -1,17 +1,18 @@
+// About.jsx
+
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import './About.css';
 import jonas from '../../assets/jonas-pajah.jpg';
-import theme_patern from '../../assets/theme_pattern.svg';
+import theme_pattern from '../../assets/theme_pattern.svg';
 
-// Define the stats array outside of the component
 const stats = [
     { num: 1, text: "Years of Experience" },
     { num: 11, text: "Projects Completed" },
     { num: 15, text: "Happy Clients" }
 ];
 
-const About = () => {
+const About = ({ theme }) => {
     const [animated, setAnimated] = useState(false);
     const [counts, setCounts] = useState([]);
     const [targets, setTargets] = useState([]);
@@ -59,10 +60,10 @@ const About = () => {
     }, [animated, counts, targets]);
 
     return (
-        <div id="about" className='about sections'>
+        <div id="about" className={`about sections ${theme}`}>
             <div className="about-title">
                 <h1>Who am I?</h1>
-                <img src={theme_patern} alt="pattern" loading="lazy"/>
+                <img src={theme_pattern} alt="pattern" loading="lazy"/>
             </div>
             <div className="about-sections">
                 <div className="about-left">

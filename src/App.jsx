@@ -9,8 +9,15 @@ import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Preloader from './Components/Preloader/Preloader';
+import ToggleButton from './Components/ToggleButton/ToggleButton'; // Adjust path as needed
+import './App.css';
 
 const App = () => {
+  const [theme, setTheme] = useState(() => {
+    // Retrieve theme from localStorage if available, or use 'dark' as default
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme || 'dark';
+  });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,21 +28,29 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+    // Save theme preference to localStorage
+    localStorage.setItem('theme', newTheme);
+  };
+
   return (
-    <div>
+    <div className={`app ${theme}`}>
       {loading ? (
-        <Preloader />
+        <Preloader theme={theme}/>
       ) : (
         <>
-          <Navbar />
-          <Hero />
-          <About />
-          <Skills />
-          <Experience />
-          <Services />
-          <Projects />
-          <Contact />
-          <Footer />
+          <Navbar theme={theme} />
+          <ToggleButton theme={theme} toggleTheme={toggleTheme} />
+          <Hero theme={theme} />
+          <About theme={theme} />
+          <Skills theme={theme} />
+          <Experience theme={theme} />
+          <Services theme={theme} />
+          <Projects theme={theme} />
+          <Contact theme={theme} />
+          <Footer theme={theme} />
         </>
       )}
     </div>

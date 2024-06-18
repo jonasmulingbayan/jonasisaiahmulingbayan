@@ -7,6 +7,13 @@
     padding: 80px 170px 20px 170px;
 }
 
+.about.light {
+    /* Light mode styles */
+    background-color: var(--white);
+    color:  var(--black);
+    
+}
+
 .about-title{
     position: relative;
 }
@@ -15,6 +22,8 @@
     font-size: 65px;
     font-weight: 600;
 }
+
+
 .about-title img{
     position: absolute;
     bottom: 10px;
@@ -107,6 +116,14 @@
     -webkit-text-fill-color: transparent;
 }
 
+.about.light .about-achievement .count{
+    background: var(--light-accent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 .about-achievement p{
     font-size: 20px;
     font-weight: 500;
@@ -137,6 +154,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.about.light .about-paragraph h3{
+    background: var(--light-accent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
 .about-paragraph p{
     font-size:20px;
 }
@@ -155,6 +180,7 @@
     font-size:20px;
     margin-bottom: 5px;
 }
+
 @media(max-width:1024px){
     .about{
         gap:50px;

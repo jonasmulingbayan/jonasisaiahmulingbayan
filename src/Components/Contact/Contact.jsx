@@ -4,7 +4,7 @@ import theme_patern from '../../assets/theme_pattern.svg';
 import mail_icon from '../../assets/mail_icon.svg';
 import location_icon from '../../assets/location_icon.svg';
 
-const Contact = () => {
+const Contact = ({theme}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className='contact sections'>
+    <div id="contact" className={`contact sections ${theme}`}>
       <div className="contact-title">
         <h1>Get in touch</h1>
         <img src={theme_patern} alt="pattern" loading="lazy"/>

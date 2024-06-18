@@ -3,9 +3,9 @@ import './Services.css'
 import theme_patern from '../../assets/theme_pattern.svg'
 import Services_Data from '../../assets/services_data'
 
-const Services = () => {
+const Services = ({theme}) => {
   return (
-    <div id = "services" className='services sections'>
+    <div id = "services" className={`services sections ${theme}`}>
         <div className="services-title">
             <h1>My Services</h1>
             <img src = {theme_patern} alt = "pattern" loading="lazy"/>

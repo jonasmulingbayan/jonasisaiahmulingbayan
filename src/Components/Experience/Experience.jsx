@@ -3,9 +3,9 @@ import './Experience.css';
 import theme_patern from '../../assets/theme_pattern.svg';
 import Experiences_Data from '../../assets/experiences_data'
 
-const Experience = () => {
+const Experience = ({ theme }) => {
   return (
-    <div id="experience" className='experience sections'>
+    <div id="experience" className={`experience sections ${theme}`}>
         <div className="experience-title">
             <h1>Experiences</h1>
             <img src={theme_patern} alt="pattern" />

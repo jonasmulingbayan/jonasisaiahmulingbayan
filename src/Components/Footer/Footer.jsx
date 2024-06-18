@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Footer.css'
 
-const Footer = () => {
+const Footer = ({theme}) => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
   useEffect(() => {
@@ -9,7 +9,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className='footer'>
+    <div className={`footer ${theme}`}>
       <div className="copyright">
         &copy; <span>{currentYear} <a href="https://www.facebook.com/jonasisaiah.mulingbayan/">Jonas Isaiah P. Mulingbayan</a>&trade;. All Rights Reserved.</span>
       </div>

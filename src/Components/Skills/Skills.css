@@ -6,6 +6,12 @@
   padding: 80px 170px;
 }
 
+.skills-container.light {
+  /* Light mode styles */
+  background-color: var(--white);
+  color:  var(--black);
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +30,14 @@
   background: rgb(63, 63, 63);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container.light .skill-item{
+  background: var(--light-gray);
+}
+
+.skills-container.light .skill-item:hover{
+  border: 2px solid var(--light-accent);
 }
 
 .skill-item:hover {
@@ -51,6 +65,13 @@
   margin-bottom: 10px;
   background: rgb(9, 9, 121);
   background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%, rgba(251, 251, 254, 1) 92%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-container.light .skills-description h2{
+  background: var(--light-accent);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

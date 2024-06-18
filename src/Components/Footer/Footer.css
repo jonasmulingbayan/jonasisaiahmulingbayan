@@ -7,10 +7,23 @@
     padding:15px 20px;
     background: #313131;
 }
+
+.footer.light{
+    background: var(--light-accent);
+}
 .copyright a,
 .credits a{
     text-decoration: none;
     color:#ffc201;  
+}
+.footer.light .copyright,
+.footer.light .copyright a,
+.footer.light .credits a{
+    color: var(--white);
+}
+
+.footer.light span{
+    color: var(--white);
 }
 
 @media(max-width:600px){

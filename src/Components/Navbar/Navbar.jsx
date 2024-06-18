@@ -4,9 +4,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
 import logo from '../../assets/jonas_logo.png';
-import { FaSun, FaMoon } from 'react-icons/fa';
+import logo_light from '../../assets/jonas-logo-1.png';
 
-const Navbar = () => {
+const Navbar = ({theme}) => {
   const [menu, setMenu] = useState("home");
   const menuRef = useRef();
 
@@ -49,22 +49,13 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
-
-  // Define a state for toggling between light and dark mode
-  //const [isLightMode, setIsLightMode] = useState(true);
-
-  // Function to toggle between light and dark mode
-  // const toggleMode = () => {
-    // setIsLightMode(prevMode => !prevMode);
-  // };
 
   return (
-    <div className={`navbar ${isSticky ? 'sticky' : ''}`} >
+    <div className={`navbar ${isSticky ? 'sticky' : ''} ${theme}`} >
       {/*<img src={logo} alt="" />*/}
       <img src={menu_open} alt="" className='nav-mob-open' onClick={openMenu} />
       <AnchorLink className='anchor-link' offset={50} href='#home' aria-label="Back to Home">
-      <img className = "navbar-logo" src={logo} alt="Jonas Isaiah P. Mulingbayan" />
+      <img className = "navbar-logo" src={theme === 'dark' ? logo : logo_light} alt="Jonas Isaiah P. Mulingbayan" />
       {/*<h3>
         <span id="symbols1">&#x003C;</span> JONAS MULINGBAYAN <span id="symbols2">/&#62;</span>
       </h3>*/}

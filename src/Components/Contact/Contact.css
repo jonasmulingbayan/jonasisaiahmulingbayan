@@ -44,19 +44,32 @@
     -webkit-text-fill-color: transparent;
 }
 
+.contact.light .contact-left h1{
+    background: var(--light-accent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .contact-left p{
     max-width: 550px;
     color: var(--light-gray);
     font-size:20px;
     line-height: 35px;
 }
-
+.contact.light .contact-left p{
+    color: var(--medium-black);
+}
 .contact-details{
     display: flex;
     flex-direction: column;
     gap: 30px;
     color: var(--light-gray);
     font-size: 22px;
+}
+
+.contact.light .contact-details{
+    color: var(--black);
 }
 
 .contact-detail{
@@ -78,6 +91,10 @@
     font-weight: 500;
 }
 
+.contact.light .contact-right label{
+    color: var(--black);
+}
+
 .contact-right input{
     border:none;
     width:700px;
@@ -88,6 +105,10 @@
     color:var(--white);
     font-family: 'Open Sans';
     font-size:18px;
+}
+
+.contact.light .contact-right input{
+    background: var(--light-gray);
 }
 .contact-right textarea{
     border:none;
@@ -102,7 +123,9 @@
     font-family: 'Open Sans';
     font-size:18px;
 }
-
+.contact.light .contact-right textarea{
+    background: var(--light-gray);
+}
 .contact-submit{
     border:none;
     color:var(--white);
@@ -113,6 +136,10 @@
     margin-bottom: 50px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.contact.light .contact-submit{
+    background: var(--light-accent);
 }
 .contact-submit:hover{
     transform: scale(1.1);

@@ -1,4 +1,5 @@
-:root{
+/* index.css */
+:root {
   --yellow: #ffc201;
   --black: #000;
   --white: #fff;
@@ -6,36 +7,35 @@
   --navbar-sticky: #202020;
   --medium-black: #313131;
   --light-gray: #d8d8d8;
+  --light-accent: #007bff;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
-
 }
-body{
+
+body {
   height: 100vh;
-  background: var(--body-black);
-  color:var(--white);
   font-family: 'Google Sans';
+  background: var(--body-black);
 }
 
-body::-webkit-scrollbar{
-	width: 7px;
-}
-body::-webkit-scrollbar-track{
-	background: var(--white);
-}
-body::-webkit-scrollbar-thumb{
-  background: var(--yellow);
-	border-radius: 25px;
+body::-webkit-scrollbar {
+  width: 7px;
 }
 
-body::-webkit-scrollbar-thumb:hover{
+body::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--medium-black);
+  border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
   background: var(--medium-black);
 }
 
-::selection{
-  background:var(--yellow);
-  color:var(--white);
-}
+
