@@ -155,10 +155,11 @@
 @media(max-width:550px){
     .services{
         padding: 50px 30px 5px 30px;
+        gap:20px;
     } 
 
     .services-title h1{
-        font-size: 45px;
+        font-size: 35px;
     }
     .services-title img{
         right: -10px;

@@ -142,11 +142,18 @@
     font-size: 13px;
   }
 }
-
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .skills-grid {
     gap: 10px;
   }
+}
+
+@media (max-width: 400px) {
+  .skills-grid {
+   justify-content: center;
+   gap:15px;
+  }
+
   .skill-item span {
     font-size: 12px;
   }

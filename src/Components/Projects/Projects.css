@@ -379,6 +379,7 @@
 @media(max-width:550px){
     .projects{
         padding: 50px 30px;
+        gap:20px;
     } 
     .filter-buttons{
         gap:15px;
@@ -389,7 +390,7 @@
     }
 
     .projects-title h1{
-        font-size: 45px;
+        font-size: 35px;
     }
     .projects-title img{
         right: -10px;

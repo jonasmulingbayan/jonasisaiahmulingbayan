@@ -271,9 +271,10 @@
 @media(max-width:550px){
     .about{
         padding: 50px 30px 5px 30px !important;
+        gap:20px;
     } 
     .about-title h1{
-        font-size: 45px;
+        font-size: 35px;
     }
     .about-title img{
         right: -10px;

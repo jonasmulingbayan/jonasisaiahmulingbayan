@@ -199,6 +199,10 @@
   .navbar-logo {
     margin-left: -25px;
   }
+
+  .navbar.light .nav-menu {
+    background-color: var(--light-accent);
+  }
 }
 
 @media (max-width: 500px) {
