@@ -245,7 +245,6 @@ const mywork_data = [
         w_proj: "Freelance Project",
         w_description: "I created this website for a freelancing client. I designed and developed the user interface using HTML, CSS, Bootstrap, and JavaScript. For the backend, I used PHP and MySQL",
         w_tech_stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript","Bootstrap"],
-        github_link: "#",
     },
 ]
  
