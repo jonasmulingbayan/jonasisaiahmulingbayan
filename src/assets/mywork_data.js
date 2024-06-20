@@ -15,6 +15,7 @@ import project14_img from '../assets/projects/portfolio-14.png'
 import project15_img from '../assets/projects/portfolio-15.png'
 import project16_img from '../assets/projects/portfolio-16.png'
 import project17_img from '../assets/projects/portfolio-17.png'
+import project18_img from '../assets/projects/portfolio-18.png'
 
 const mywork_data = [
     {
@@ -221,6 +222,17 @@ const mywork_data = [
         w_proj: "JavaScript | API Practice",
         w_description: "This website is created using HTML, CSS and JavaScript. This website is for practice purpose only, to familiarize how to fetch api using JavaScript.",
         w_tech_stack: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        w_no:16,
+        w_name:"Tawoquest Inc.",
+        w_img:project18_img,
+        w_gh_link: "#",
+        w_demo_link: "http://ph.tawoquest.com/",
+        w_category: "Wordpress",
+        w_proj: "Company Project",
+        w_description: "This website is created using wordpress with elementor as page builder. This is my seventh wordpress website created as a Wordpress Developer.",
+        w_tech_stack: ["WordPress", "Elementor", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
     },
 ]
  

@@ -313,7 +313,18 @@
     background: linear-gradient(90deg, #ffc201 9%, #ffc201 56%,#ffc201 92%);
     transition: 0.3s;
   }
-  
+  .projects.light .view-source-button {
+    background: var(--white);
+    border:1px solid var(--light-accent);
+    color:var(--light-accent);
+  }
+  .projects.light .view-source-button:hover {
+    transform: scale(1.1);
+    background: var(--light-accent);
+    border:1px solid var(--light-accent);
+    color:var(--white);
+    transition: 0.3s;
+  }
 @media(max-width:1600px){
     
     .projects-container{
