@@ -16,6 +16,7 @@ import project15_img from '../assets/projects/portfolio-15.png'
 import project16_img from '../assets/projects/portfolio-16.png'
 import project17_img from '../assets/projects/portfolio-17.png'
 import project18_img from '../assets/projects/portfolio-18.png'
+import project19_img from '../assets/projects/portfolio-19.png'
 
 const mywork_data = [
     {
@@ -26,7 +27,7 @@ const mywork_data = [
         w_demo_link: "https://www.youtube.com/watch?v=nIRSDFw6fZs&t=60s",
         w_category: "PHP",
         w_proj: "Capstone Project/Thesis",
-        w_description: "This website is created during our Capstone Project or Thesis. I design and developed the user interface of this project using Figma, HTML, CSS and JavaScript. I stored the images in a database using PHP MySQL. This is a dynamic website.",
+        w_description: "This website was created during our Capstone Project or Thesis. I designed and developed the user interface using Figma, HTML, CSS, and JavaScript. Images are stored in a PHP MySQL database, making it a dynamic website.",
         w_tech_stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript","Bootstrap", "Figma"],
         github_link: "",
     },
@@ -37,7 +38,7 @@ const mywork_data = [
         w_gh_link: "#",
         w_demo_link: "https://www.youtube.com/watch?v=xM24RejvGFI",
         w_proj: "Capstone Project/Thesis",
-        w_description: "Created using HTML, CSS, JavaScript and PHP/MySQL. This website is designed by me during our Capstone Project or Thesis. I design and developed the user interface of this project using Figma, HTML, CSS and JavaScript. I stored the images in a database using PHP MySQL. This is a dynamic website.",
+        w_description: "Created using HTML, CSS, JavaScript, and PHP/MySQL, this website was designed by me during our Capstone Project or Thesis. I designed and developed the user interface using Figma, HTML, CSS, and JavaScript. Images are stored in a PHP MySQL database, making this a dynamic website.",
         w_tech_stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript","Bootstrap", "Figma"],
         github_link: "",
 
@@ -50,7 +51,7 @@ const mywork_data = [
         w_demo_link: "http://mahumalingscents.infinityfreeapp.com/",
         w_category: "HTML",
         w_proj: "OJT Project",
-        w_description: "This website is my project during my OJT. I design and developed the user interface of this project using Figma, HTML, CSS and JavaScript. I stored the images in a database using PHP MySQL. I created this website for the marketing team that I was assigned named Mahumaling Scents. I developed this project to practice my coding skills.",
+        w_description: "This website is my project during my OJT. I designed and developed the user interface using Figma, HTML, CSS, and JavaScript. Images are stored in a PHP MySQL database. I created this website for the marketing team I was assigned to, named Mahumaling Scents. The project served as practice for my coding skills.",
         w_tech_stack: ["HTML", "CSS", "JavaScript", "Figma"],
         github_link: "https://github.com/jonasmulingbayan/Mahumaling_Scents.git",
 
@@ -63,7 +64,7 @@ const mywork_data = [
         w_demo_link: "https://jonasmulingbayan.github.io/techtonic-ims/",
         w_category: "HTML",
         w_proj: "School Project",
-        w_description: "This website is created for our Project in Web Systems and Technology subject. I design and developed the user interface of this project using Figma, HTML, CSS and JavaScript.",
+        w_description: "This website was created for our Project in the Web Systems and Technology subject. I designed and developed the user interface of this project using Figma, HTML, CSS, and JavaScript.",
         w_tech_stack: ["HTML", "CSS", "JavaScript", "Figma"],
         github_link: "https://github.com/jonasmulingbayan/techtonic-ims.git",
     },
@@ -75,7 +76,7 @@ const mywork_data = [
         w_demo_link: "https://jonasmulingbayan.github.io/jonasisaiahmulingbayan/",
         w_category: "React",
         w_proj: "Personal Website",
-        w_description: "This website is created to showcase my skills in web designing. I design and developed the UI of this project using React Js, and Vite Js",
+        w_description: "This website is created to showcase my skills in web design. I designed and developed the UI of this project using React.js and Vite.js.",
         w_tech_stack: ["React","Vite"],
         github_link: "",
 
@@ -88,7 +89,7 @@ const mywork_data = [
         w_demo_link: "https://www.youtube.com/watch?v=BJStX4Mho2Q&pp=ygUFZXpwb3M%3D",
         w_category: "PHP",
         w_proj: "Capstone Project/Thesis",
-        w_description: "This website is created during our Capstone Project or Thesis. It includes all the settings for the park pizza like Inventory Management System, Point-of-Sales, & E-Commerce. I design and developed the user interface of this project using Figma, HTML, CSS and JavaScript. I stored the images in a database using PHP MySQL. This is a dynamic website.",
+        w_description: "This website was developed as part of our Capstone Project or Thesis. It includes features such as Inventory Management System, Point-of-Sales, and E-Commerce for Park Pizza. I designed and developed the user interface of this project using Figma, HTML, CSS, and JavaScript. Images are stored in a PHP MySQL database, making this a dynamic website.",
         w_tech_stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript","Bootstrap", "Figma"],
         github_link: "",
     },
@@ -100,7 +101,7 @@ const mywork_data = [
         w_demo_link: "https://jonasmulingbayan.github.io/anniversary/",
         w_category: "HTML",
         w_proj: "Anniversary Gift",
-        w_description: "This website is created using HTML, CSS and JavaScript. I developed this website as a gift and greetings for my girlfriend for our celebration of 6th Anniversary.",
+        w_description: "This website is created using HTML, CSS, and JavaScript. I developed it as a gift and greeting for my girlfriend to celebrate our 6th anniversary.",
         w_tech_stack: ["HTML", "CSS", "JavaScript"],
         github_link: "https://github.com/jonasmulingbayan/anniversary.git",
 
@@ -114,7 +115,7 @@ const mywork_data = [
         w_demo_link: "#",
         w_category: "PHP",
         w_proj: "OJT Project",
-        w_description: "This website is created using HTML, CSS & JavaScript for front-end and PHP MySQL for backend. I developed this system as a project during my OJT.",
+        w_description: "This website is created using HTML, CSS, and JavaScript for the front-end, and PHP with MySQL for the backend. I developed this system as a project during my OJT.",
         w_tech_stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript","Bootstrap"],
         github_link: "",
 
@@ -127,7 +128,7 @@ const mywork_data = [
         w_demo_link: "#",
         w_category: "PHP",
         w_proj: "OJT Project",
-        w_description: "This website is created using HTML, CSS & JavaScript for front-end and PHP MySQL for backend. I developed this system as a project during my OJT. This system will help the company to easily monitored their inventory of low stocks and out of stock products.",
+        w_description: "This website is created using HTML, CSS, and JavaScript for the front-end, and PHP with MySQL for the backend. I developed this system as a project during my OJT. It helps the company easily monitor their inventory for low stock and out-of-stock products.",
         w_tech_stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript","Bootstrap"],
         github_link: "",
     },
@@ -139,7 +140,7 @@ const mywork_data = [
         w_demo_link: "http://todo-list.infinityfreeapp.com/",
         w_category: "PHP",
         w_proj: "Practice Coding",
-        w_description: "I created this website just for practicing my coding skills. I design and developed the user interface of this project using HTML, CSS and JavaScript. And I used PHP / MySql as a backend for saving task.",
+        w_description: "I created this website solely to practice my coding skills. I designed and developed the user interface of this project using HTML, CSS, and JavaScript. For the backend, I utilized PHP/MySQL to save tasks.",
         w_tech_stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript","Bootstrap"],
         github_link: "https://github.com/jonasmulingbayan/todolist.git",
 
@@ -152,7 +153,7 @@ const mywork_data = [
         w_demo_link: "https://digital.massonshealthcare.com.au/",
         w_category: "Wordpress",
         w_proj: "Company Project",
-        w_description: "This website is created using wordpress with elementor as page builder. This is my first wordpress website created as a Wordpress Developer.",
+        w_description: "This website was created using WordPress with Elementor as the page builder. This is my first WordPress website as a WordPress Developer.",
         w_tech_stack: ["WordPress", "Elementor", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
 
     },
@@ -164,7 +165,7 @@ const mywork_data = [
         w_demo_link: "https://in1gotech.com/",
         w_category: "Wordpress",
         w_proj: "Company Project",
-        w_description: "This website is created using wordpress with elementor as page builder. This is my second wordpress website created as a Wordpress Developer.",
+        w_description: "This website was created using WordPress with Elementor as the page builder. This is my second WordPress website as a WordPress Developer.",
         w_tech_stack: ["WordPress", "Elementor", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
 
     },
@@ -176,7 +177,7 @@ const mywork_data = [
         w_demo_link: "https://day1.pro/",
         w_category: "Wordpress",
         w_proj: "Company Project",
-        w_description: "This website is created using wordpress with elementor as page builder. This is my third wordpress website created as a Wordpress Developer.",
+        w_description: "This website was created using WordPress with Elementor as the page builder. This is my third WordPress website as a WordPress Developer.",
         w_tech_stack: ["WordPress", "Elementor", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
     },
     {
@@ -187,7 +188,7 @@ const mywork_data = [
         w_demo_link: "https://1gologistics.tech/",
         w_category: "Wordpress",
         w_proj: "Company Project",
-        w_description: "This website is created using wordpress with elementor as page builder. This is my fourth wordpress website created as a Wordpress Developer.",
+        w_description: "This website was created using WordPress with Elementor as the page builder. This is my fourth WordPress website as a WordPress Developer.",
         w_tech_stack: ["WordPress", "Elementor", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
     },
     {
@@ -198,7 +199,7 @@ const mywork_data = [
         w_demo_link: "https://developer.loadr.me/",
         w_category: "Wordpress",
         w_proj: "Company Project",
-        w_description: "This website is created using wordpress with elementor as page builder. This is my fifth wordpress website created as a Wordpress Developer.",
+        w_description: "This website was created using WordPress with Elementor as the page builder. This is my fifth WordPress website as a WordPress Developer.",
         w_tech_stack: ["WordPress", "Elementor", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
     },
     {
@@ -209,7 +210,7 @@ const mywork_data = [
         w_demo_link: "https://thebesttemplate.com/",
         w_category: "Wordpress",
         w_proj: "Freelance Project",
-        w_description: "This website is created using wordpress with elementor as page builder. This is my sixth wordpress website created as a Wordpress Developer.",
+        w_description: "This website was created using WordPress with Elementor as the page builder. This is my sixth WordPress website as a WordPress Developer. I created it for a freelancing client.",
         w_tech_stack: ["WordPress", "Blocksy", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
     },
     {
@@ -220,19 +221,31 @@ const mywork_data = [
         w_demo_link: "https://jonasmulingbayan.github.io/image-search-engine/",
         w_category: "HTML",
         w_proj: "JavaScript | API Practice",
-        w_description: "This website is created using HTML, CSS and JavaScript. This website is for practice purpose only, to familiarize how to fetch api using JavaScript.",
+        w_description: "This website was created using HTML, CSS, and JavaScript. It is for practice purposes only, to familiarize myself with fetching APIs using JavaScript.",
         w_tech_stack: ["HTML", "CSS", "JavaScript"]
     },
     {
-        w_no:16,
+        w_no:18,
         w_name:"Tawoquest Inc.",
         w_img:project18_img,
         w_gh_link: "#",
         w_demo_link: "http://ph.tawoquest.com/",
         w_category: "Wordpress",
         w_proj: "Company Project",
-        w_description: "This website is created using wordpress with elementor as page builder. This is my seventh wordpress website created as a Wordpress Developer.",
+        w_description: "This website was created using WordPress with Elementor as the page builder. This is my seventh WordPress website as a WordPress Developer.",
         w_tech_stack: ["WordPress", "Elementor", "PHP", "MySQL", "HTML", "CSS", "JavaScript"]
+    },
+    {
+        w_no:19,
+        w_name:"Poko88 Betting",
+        w_img:project19_img,
+        w_gh_link: "#",
+        w_demo_link: "http://poko88.lucarnuo.com/",
+        w_category: "PHP",
+        w_proj: "Freelance Project",
+        w_description: "I created this website for a freelancing client. I designed and developed the user interface using HTML, CSS, Bootstrap, and JavaScript. For the backend, I used PHP and MySQL",
+        w_tech_stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript","Bootstrap"],
+        github_link: "#",
     },
 ]
  
