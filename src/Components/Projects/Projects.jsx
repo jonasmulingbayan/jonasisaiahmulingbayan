@@ -2,25 +2,22 @@ import React, { useState, useEffect } from 'react';
 import './Projects.css';
 import themePattern from '../../assets/theme_pattern.svg';
 import ProjectData from '../../assets/mywork_data';
-import { FaGithub,FaLink, FaInfoCircle } from "react-icons/fa";
+import { FaGithub, FaLink, FaInfoCircle } from "react-icons/fa";
+import { FaCircleArrowLeft, FaCircleArrowRight  } from "react-icons/fa6";
 
-const Projects = ({theme}) => {
-  const [selectedCategory, setSelectedCategory] = useState(() => {
-    // Retrieve selected category from localStorage if available, or default to 'All'
-    return localStorage.getItem('selectedCategory') || 'All';
-  });
-  const [currentPage, setCurrentPage] = useState(() => {
-    // Retrieve current page from localStorage if available, or default to 1
-    return parseInt(localStorage.getItem('currentPage')) || 1;
-  });
-  const [selectedProject, setSelectedProject] = useState(null); // State for selected project
+const Projects = ({ theme }) => {
+  const [selectedCategory, setSelectedCategory] = useState(() => localStorage.getItem('selectedCategory') || 'All');
+  const [currentPage, setCurrentPage] = useState(() => parseInt(localStorage.getItem('currentPage')) || 1);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [modalIndex, setModalIndex] = useState(0); // State to track index in modal carousel
+
   const projectsPerPage = 6;
 
   const handleFilter = (category) => {
     setSelectedCategory(category);
-    setCurrentPage(1); // Reset current page when changing categories
-    localStorage.setItem('selectedCategory', category); // Persist selected category to localStorage
-    localStorage.setItem('currentPage', 1); // Persist current page to localStorage
+    setCurrentPage(1);
+    localStorage.setItem('selectedCategory', category);
+    localStorage.setItem('currentPage', 1);
   };
 
   const indexOfLastProject = currentPage * projectsPerPage;
@@ -35,30 +32,45 @@ const Projects = ({theme}) => {
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
-    localStorage.setItem('currentPage', pageNumber); // Persist current page to localStorage
+    localStorage.setItem('currentPage', pageNumber);
   };
+
   const goToNextPage = () => setCurrentPage(prevPage => {
     const nextPage = prevPage + 1;
-    localStorage.setItem('currentPage', nextPage); // Persist current page to localStorage
+    localStorage.setItem('currentPage', nextPage);
     return nextPage;
   });
+
   const goToPrevPage = () => setCurrentPage(prevPage => {
     const prevPageNumber = prevPage - 1;
-    localStorage.setItem('currentPage', prevPageNumber); // Persist current page to localStorage
+    localStorage.setItem('currentPage', prevPageNumber);
     return prevPageNumber;
   });
 
-  // Function to open modal and set selected project
-  const openModal = (project) => {
+  const openModal = (project, index) => {
     setSelectedProject(project);
+    setModalIndex(index);
   };
 
-  // Function to close modal
   const closeModal = () => {
     setSelectedProject(null);
+    setModalIndex(0);
   };
 
-  // Add event listener to close modal when ESC key is pressed
+  const nextProject = () => {
+    if (modalIndex < filteredProjects.length - 1) {
+      setModalIndex(prevIndex => prevIndex + 1);
+      setSelectedProject(filteredProjects[modalIndex + 1]); // Update selected project
+    }
+  };
+
+  const prevProject = () => {
+    if (modalIndex > 0) {
+      setModalIndex(prevIndex => prevIndex - 1);
+      setSelectedProject(filteredProjects[modalIndex - 1]); // Update selected project
+    }
+  };
+
   useEffect(() => {
     const handleEscKey = (event) => {
       if (event.key === 'Escape') {
@@ -73,12 +85,11 @@ const Projects = ({theme}) => {
     };
   }, []);
 
-
   return (
     <div id="projects" className={`projects sections ${theme}`}>
       <div className="projects-title">
         <h1>My Projects</h1>
-        <img src={themePattern} alt="pattern" loading="lazy"/>
+        <img src={themePattern} alt="pattern" loading="lazy" />
       </div>
       <div className="filter-buttons">
         <button
@@ -116,14 +127,14 @@ const Projects = ({theme}) => {
       <div className="projects-container">
         {filteredProjects.map((work, index) => (
           <div className='projects-item' key={index}>
-            <img src={work.w_img} alt="Projects" loading="lazy"/>
+            <img src={work.w_img} alt="Projects" loading="lazy" />
             <h3>{work.w_name}</h3>
             <div className='project-button-item'>
-              <button type='button' className='info' onClick={() => openModal(work)} aria-label="View informations about my projects" >
-                View Info <FaInfoCircle /> 
+              <button type='button' className='info' onClick={() => openModal(work, index)} aria-label="View information about my projects">
+                View Info <FaInfoCircle />
               </button>
               <a className='demo' href={work.w_demo_link} target="_blank" rel="noopener noreferrer" aria-label="Visit the repository of my projects">
-                 View Demo <FaLink />
+                View Demo <FaLink />
               </a>
             </div>
           </div>
@@ -131,51 +142,57 @@ const Projects = ({theme}) => {
       </div>
       <div className="pagination">
         <button onClick={goToPrevPage} disabled={currentPage === 1}
-        style={{
-          cursor: currentPage === 1 ? 'not-allowed' : 'pointer'
-        }}>Previous</button>
+          style={{
+            cursor: currentPage === 1 ? 'not-allowed' : 'pointer'
+          }}>Previous</button>
         {Array.from({ length: totalPages }, (_, i) => (
           <button key={i + 1} onClick={() => paginate(i + 1)} className={currentPage === i + 1 ? 'active' : ''}>
             {i + 1}
           </button>
         ))}
         <button onClick={goToNextPage} disabled={currentPage === totalPages}
-        style={{
-          cursor: currentPage === totalPages ? 'not-allowed' : 'pointer'
-        }}>Next</button>
+          style={{
+            cursor: currentPage === totalPages ? 'not-allowed' : 'pointer'
+          }}>Next</button>
       </div>
       {/* Modal */}
       {selectedProject && (
-  <div className="modal">
-    <div className="modal-content">
-      <span className="close" onClick={closeModal}>&times;</span>
-      <div className='project-items'>
-        <h2>{selectedProject.w_name}</h2>
-        <h3>{selectedProject.w_proj}</h3>
-        <p>Description: {selectedProject.w_description}</p>
-        <p>Tech Stack:</p>
-        <p className='techstack'>
-          {selectedProject.w_tech_stack.map((tech, index) => (
-            <span key={index} style={{ backgroundColor: getBackgroundColor(tech), color: getTextColor(tech) }}>
-              {tech}
-            </span>
-          ))}
-        </p>
-        <div className='gh_btn'>
-        {selectedProject.github_link && (
-          <a href={selectedProject.github_link} target="_blank" rel="noopener noreferrer" className="view-source-button">
-            View Source Code <FaGithub size={30}/>
-          </a>
-        )}
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>&times;</span>
+            <div className='project-items'>
+              <div className='item-project-image'>
+              <FaCircleArrowLeft className='prev-btn' onClick={prevProject} disabled={modalIndex === 0} />
+              <img src={selectedProject.w_img} alt="Project" loading="lazy" />
+              <FaCircleArrowRight className='next-btn' onClick={nextProject} disabled={modalIndex === filteredProjects.length - 1} />
+              </div>
+              <div className='project-items-details'>
+              <h2>{selectedProject.w_name}</h2>
+              <h3>{selectedProject.w_proj}</h3>
+              <p>Description: {selectedProject.w_description}</p>
+              <p>Tech Stack:</p>
+              <div className='details-project'>
+              <p className='techstack'>
+                {selectedProject.w_tech_stack.map((tech, index) => (
+                  <span key={index} style={{ backgroundColor: getBackgroundColor(tech), color: getTextColor(tech) }}>
+                    {tech}
+                  </span>
+                ))}
+              </p>
+              {selectedProject.github_link && (
+                  <a href={selectedProject.github_link} target="_blank" rel="noopener noreferrer" className="view-source-button">
+                    View Source Code <FaGithub size={30} />
+                  </a>
+              )}
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
-  </div>
-)}
-
-    </div>
-  )
-}
+  );
+};
 
 export default Projects;
 
@@ -206,7 +223,6 @@ const getBackgroundColor = (tech) => {
       return '#61DAFB';
     case 'Vite':
       return '#646cff';
-    // Add more cases for other tech stack items if needed
     default:
       return 'initial';
   }
@@ -239,7 +255,6 @@ const getTextColor = (tech) => {
       return '#ffffff';
     case 'Vite':
       return '#ffffff';
-    // Add more cases for other tech stack items if needed
     default:
       return 'initial';
   }

@@ -239,7 +239,7 @@
 .modal {
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 99999999; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -251,21 +251,44 @@
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    margin: 20% auto; /* 20% from the top and centered */
+    margin: 8px auto; /* 20% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 100%; /* Could be more or less, depending on screen size */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 600px; /* Max width */
+    max-width: 1280px; /* Max width */
+    height: auto;
     color:var(--medium-black);
     border-radius: 10px;
     
   }
-  
+  .item-project-image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .project-items img{
+    height: 650px;
+    width: 100%;
+    margin-top:20px;
+    border-radius: 5px;
+    border:1px solid var(--black);
+  }
   .project-items{
     display: flex;
     flex-direction: column;
     gap:10px;
+  }
+  .project-items-details{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  .project-items .details-project{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .techstack{
     display: flex;
@@ -282,6 +305,8 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-top:-15px;
+    margin-right: -10px;
   }
   
   .close:hover,
@@ -291,14 +316,13 @@
     cursor: pointer;
   }
 
- 
   .view-source-button {
     display: flex;
     align-items: center;
     gap:10px;
-    width:175px;
-    padding: 10px 20px;
-    margin-top: 10px;
+    width:160px;
+    font-size: 14px;
+    padding: 10px;
     background: var(--black);
     border:1px solid var(--yellow);
     color:var(--yellow);
@@ -325,16 +349,57 @@
     color:var(--white);
     transition: 0.3s;
   }
-@media(max-width:1600px){
-    
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .prev-btn,
+  .next-btn {
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--yellow); /* Adjust color as per your design */
+    background: var(--black);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .projects.light .prev-btn,
+  .projects.light .next-btn{
+    color: var(--light-accent);
+    background: var(--white);
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  
+@media(max-width:1600px){ 
     .projects-container{
         grid-template-columns: 1fr 1fr;
         gap:50px;
     }
-
-   
 }
-
+@media(max-width:1300px){
+    /* Modal Content */
+    .modal-content {
+        width: 80%; /* Could be more or less, depending on screen size */
+        max-width: 100%; /* Max width */
+    }
+    .project-items img{
+        height: 500px;
+    }
+}
 @media(max-width:900px){
     .projects{
         gap:50px;
@@ -377,15 +442,34 @@
         margin: 50px auto;
         cursor: pointer;
     }
+
+    /* Modal Content */
+    .modal-content {
+        width: 80%; /* Could be more or less, depending on screen size */
+        max-width: 100%; /* Max width */
+        margin: 8% auto;
+        height: auto;
+    }
+    .project-items img{
+        height: 350px;
+    }
+
+    .project-items .details-project{
+        display: flex;
+        align-items: flex-start;
+        gap:10px;
+        flex-direction: column;
+      }
 }
 
 @media(max-width:700px){
+    /* Modal Content */
     .modal-content {
-        padding: 20px;
-        width: 85%; /* Could be more or less, depending on screen size */
-        max-width: 100%; /* Max width */
-        
-      }
+        margin: 20% auto;
+    }
+    .project-items img{
+        height: 100%;
+    }
 }
 @media(max-width:550px){
     .projects{
@@ -406,6 +490,20 @@
     .projects-title img{
         right: -10px;
         width: 115px;
+    }
+    
+    
+    .prev-btn,
+    .next-btn {
+        font-size: 35px;
+        top: 60%;
+    }    
+    .prev-btn {
+        left: 0px;
+    }
+    
+    .next-btn {
+        right: 0px;
     }
 }
 
