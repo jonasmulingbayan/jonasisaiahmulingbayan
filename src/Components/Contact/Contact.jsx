@@ -82,6 +82,7 @@ const Contact = ({theme}) => {
             name='name'
             value={name}
             onChange={handleChange}
+            autocomplete="on"
           />
           <label htmlFor='email'>Email</label>
           <input
@@ -91,6 +92,7 @@ const Contact = ({theme}) => {
             name='email'
             value={email}
             onChange={handleChange}
+            autocomplete="on"
           />
           <label htmlFor='message'>Message</label>
           <textarea
