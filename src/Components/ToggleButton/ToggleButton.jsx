@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import './ToggleButton.css';
 import { MdLightMode, MdDarkMode } from "react-icons/md";

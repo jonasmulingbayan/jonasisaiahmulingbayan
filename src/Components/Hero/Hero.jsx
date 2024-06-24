@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import './Hero.css';

@@ -76,6 +76,7 @@ const Contact = ({theme}) => {
         <form onSubmit={onSubmit} className="contact-right">
           <label htmlFor='name'>Name</label>
           <input
+            id= 'name'
             type='text'
             placeholder='Enter your name'
             name='name'
@@ -84,6 +85,7 @@ const Contact = ({theme}) => {
           />
           <label htmlFor='email'>Email</label>
           <input
+            id= 'email'
             type='email'
             placeholder='Enter your email'
             name='email'
@@ -92,6 +94,7 @@ const Contact = ({theme}) => {
           />
           <label htmlFor='message'>Message</label>
           <textarea
+            id='message' 
             name='message'
             rows='8'
             placeholder='Enter your message'

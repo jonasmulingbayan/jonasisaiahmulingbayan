@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll';

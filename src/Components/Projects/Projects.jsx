@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import './Projects.css';
 import themePattern from '../../assets/theme_pattern.svg';
