@@ -55,7 +55,11 @@ const Hero = ({ theme }) => {
 
   return (
     <div id="home" className={`hero ${theme}`}>
-      <img src={profile_img} alt="Jonas Isaiah P. Mulingbayan" />
+      <div className='box'>
+          <div className='content'>
+            <img className = 'profile-img' src={profile_img} alt="Jonas Isaiah P. Mulingbayan" />
+          </div>
+      </div>
       <div className='social-icons'>
         <a href="https://github.com/jonasmulingbayan" target="_blank" rel="noopener noreferrer" aria-label="Visit my github account">
           <FaGithub className='icons'/>

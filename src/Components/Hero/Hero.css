@@ -9,15 +9,75 @@
     color: var(--dark-text);
 }
 
-.hero img {
+/*.hero img {
     margin-top: 50px;
     height: 250px;
     width: 250px;
     border-radius: 50%;
     border: 3px solid var(--yellow);
     outline: 1px solid var(--yellow);
+}*/
+
+.hero .box{
+    margin-top: 35px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: var(--white);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.hero.light .box{
+    background: var(--black);
 }
 
+.hero .box::before,
+.hero .box::after{
+    content: '';
+    position: absolute;
+    inset: -10px 90px;
+    background: var(--yellow);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+ 
+.hero.light .box::before,
+.hero.light .box::after{
+    background: var(--light-accent);
+}
+
+.hero .box:hover::before{
+    inset: -20px 0px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.hero .box .content{  
+    position: absolute;
+    inset: 5px;
+    z-index:3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.hero img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+}
 .social-icons {
     display: flex;
     justify-content: center;
@@ -122,10 +182,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.hero.light img {
+/*.hero.light img {
     border: 3px solid var(--light-accent);
     outline: 1px solid var(--light-accent);
-}
+}*/
 
 .hero.light .social-icons a {
     border: 1px solid var(--light-accent);
@@ -149,10 +209,18 @@
 
 
 @media(max-width:768px){
-    .hero img{
-        width:200px;
+    .hero .box{
+        width: 200px;
         height: 200px;
     }
+    .hero .box::before,
+    .hero .box::after{
+        inset: -10px 70px;
+    }
+    /*.hero img{
+        width:200px;
+        height: 200px;
+    }*/
     .hero .nameHeader{
         margin-top:30px;
         font-size:30px;
@@ -190,11 +258,20 @@
 }
 
 @media(max-width:600px){
-    .hero img{
+    .hero .box{
+        margin-top:35px;
+        width: 140px;
+        height: 140px;
+    }
+    .hero .box::before,
+    .hero .box::after{
+        inset: -10px 45px;
+    }
+    /*.hero img{
         margin-top:35px;
         height: 140px;
         width: 140px;
-    }
+    }*/
     .hero h1{
         font-size: 35px;
     }

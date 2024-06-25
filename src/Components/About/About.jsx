@@ -68,7 +68,11 @@ const About = ({ theme }) => {
             </div>
             <div className="about-sections">
                 <div className="about-left">
-                    <img src={jonas} alt="Jonas Isaiah P. Mulingbayan" loading="lazy"/>
+                    <div className='box'>
+                        <div className='content'>
+                            <img src={jonas} alt="Jonas Isaiah P. Mulingbayan" loading="lazy"/>
+                        </div>
+                    </div>
                 </div>
                 <div className="about-right">
                     <div className="about-paragraph">
